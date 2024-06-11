@@ -1,5 +1,5 @@
 //U22562170
-<!DOCTYPE gtml>
+<!DOCTYPE html>
 <html lang = "en">
 <head>
     <meta charset = "UTF-8">
@@ -9,7 +9,35 @@
 </head>
 <body>
     <h1>Event Registration Form</h1>
+    <form> id = "registrationForm">
+        <label for = "name">Name:</label>
+        <input type="text" id="name" name="name" required> <br>
 
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required> <br>
+
+        <label for="eventDate">Event Date:</label>
+        <select id="eventDate" name="eventDate" required>
+            <option value="">Select a date</option>
+            <option value="2024-07-04">July 7, 2024</option>
+            <option value="2024-07-14">July 14,2024</option>
+            <option value="2024-07-22">July 22,2024</option>
+        </select><br>
+
+        <label>Meal Preference</label><br>
+        <input type="checkbox" id="veg" name="meal" value="Vegetarian">
+        <label for="veg">Vegetarian</label><br>
+        <input type="checkbox" id="nonVeg" name="meal" value="Non-Vegetarian">
+        <label for="nonVeg">Non-Vegetarian</label><br>
+        <input type="checkbox" id="vegan" name="meal" value="Vegan">
+        <label for="vegan">Vegan</label><br>
+
+        <button type="submit">Register</button>
+        </form> 
+
+        <div id="registrationDetails">
+            <h2>Registration Details</h2>
+        </div>
 </body>
 
 
