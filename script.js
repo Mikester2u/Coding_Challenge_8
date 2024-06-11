@@ -1,6 +1,6 @@
+//U22562170
 document.getElementById(registrationForm).addEventListener("submit", function(event)) {
     event.preventDefault();
-}
 
 const name = document.getElementById("name").ariaValueMax.trim();
 const email= document.getElemnetById("email").value.trim();
@@ -18,3 +18,13 @@ MealPreferences.forEach((meal) => {
 
 });
 
+const registrationDetails = document.getElementById("registrationDetails");
+registrationDetails.innerHTML = 
+<h2>Registration Details</h2>
+<p><strong>Name:</strong> ${name}</p>
+<p><strong>Email:</strong> ${email}</p>
+<p><strong>Event Date:</strong> ${eventDate}</p>
+<p><strong>Meal Preferences:</strong> ${mealPrefs.join(",")}</p>
+;
+
+};
